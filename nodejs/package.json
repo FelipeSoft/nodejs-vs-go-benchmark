@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^5.1.0",
-    "mysql2": "^3.14.0"
+    "mysql2": "^3.14.0",
+    "pino-http": "^10.4.0"
   }
 }

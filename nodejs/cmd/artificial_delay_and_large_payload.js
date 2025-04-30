@@ -19,6 +19,7 @@ if (cluster.isMaster) {
 
 } else {
     const app = express();
+    app.disable('x-powered-by');
 
     app.get("/nodejs", (_, response) => {
         setTimeout(() => {

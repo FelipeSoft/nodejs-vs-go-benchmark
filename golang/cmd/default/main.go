@@ -19,7 +19,8 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/golang", func(w http.ResponseWriter, r *http.Request) {
-		body, err := json.Marshal(Message{Message: "ok"})
+		message := Message{Message: "ok"}
+		body, err := json.Marshal(message)
 		if err != nil {
 			log.Print(err)
 		}
